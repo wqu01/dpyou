@@ -1,0 +1,146 @@
+/*
+======================
+	font styles
+======================
+*/
+html, body {
+	font-family: "Open Sans", sans-serif;
+}
+.tab-font {
+	font-family: 'Raleway', sans-serif;
+}
+.mdl-typography--subhead {
+	font-family: "Open Sans", sans-serif;
+}
+.mdl-card__title-text {
+	font-family: 'Raleway', sans-serif;
+}
+.mdl-typography--headline > .material-icons {
+	vertical-align: middle;
+	font-size: 32px;
+}
+
+/*
+=====================
+	navigation 
+=====================
+*/
+.mdl-layout__tab-bar-container{
+	height: 60px;
+}
+.logo-image {
+	height: 100%;
+}
+.mdl-layout__tab{
+	height: 60px;
+	line-height: 60px;
+}
+/*
+======================
+	landing
+======================
+*/
+.landing {
+	background: url("../img/landing.jpg");
+	background-size: cover;
+	background-position: top;
+	height: 650px;
+	width: auto;
+}
+.landing-text-container {
+	margin-top: 150px;
+	margin-left: 100px;
+	padding: 20px;
+	font-family: "Raleway", sans-serif;
+	color: rgba(255,255,255,1);
+	background-color: #184274;
+}
+.landing-text {
+	color: rgba(255,255,255,1);
+	background-color: #184274;
+}
+
+/*
+======================
+	card style
+======================
+*/
+.custom-headline {
+	color: black;
+	font-size: 18px;
+}
+.custom-subhead {
+	font-size: 14px;
+}
+.custom-subhead,
+.custom-headline {
+	font-family: "Open Sans", sans-serif;
+}
+.detail-card-container .mdl-typography--font-light{
+	color: black;
+}
+
+/*
+======================
+	section style
+======================
+*/
+.content-max-width {
+	max-width: 900px;
+}
+.section-display {
+	text-align: center;
+	margin-bottom: 48px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	color: #184274;
+}
+.travel-container {
+	background-color: #fcf6e6;
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
+.event-container {
+	margin-top: 48px;
+}
+.event-image {
+	width: 100%;
+}
+.event-title {
+	padding-left: 20px;
+}
+.activities-section,
+.food-section {
+	border-bottom: 1px solid #e0e0e0;
+	padding-bottom: 40px;
+	margin-top: 40px;
+}
+.swag-section {
+	margin-top: 40px;
+	max-height: 218px;
+}
+
+/*
+======================
+	mobile style
+======================
+*/
+.show-mobile {
+	display: none;
+}
+
+
+@media (max-width:1023px){
+	.hide-mobile {
+		display: none;
+	}
+
+	.show-mobile {
+		display: block;
+	}
+}
+@media (max-width:425px){
+	.landing-text-container{
+		margin-left: 10px;
+	}
+}
