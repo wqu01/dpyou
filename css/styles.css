@@ -9,17 +9,22 @@ html, body {
 .tab-font {
 	font-family: 'Raleway', sans-serif;
 }
-.mdl-typography--subhead {
+.mdl-typography--subhead, .subhead {
 	font-family: "Open Sans", sans-serif;
 }
-.mdl-card__title-text {
+.mdl-card__title-text, .head {
 	font-family: 'Raleway', sans-serif;
 }
 .mdl-typography--headline > .material-icons {
 	vertical-align: middle;
 	font-size: 32px;
 }
-
+.head {
+	font-size: 24px;
+}
+.subhead {
+	font-size: 18px;
+}
 /*
 =====================
 	navigation 
@@ -40,13 +45,49 @@ html, body {
 	landing
 ======================
 */
-.landing {
-	background: url("../img/landing.jpg");
-	background-size: cover;
-	background-position: top;
-	height: 650px;
-	width: auto;
+.no-space {
+	padding: 0px;
 }
+.background-left {
+	background: url("../img/background-left.jpg");
+}
+.background-right {
+	background: url("../img/background-right.jpg");
+}
+.background-left, 
+.background-right{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 742px;
+	width: 50%;
+	margin: 0px;
+} 
+p.head,
+p.subhead {
+	position: absolute;
+	color: rgba(255,255,255,1);
+	background-color: #184274;
+	padding: 10px;
+}
+p.head {
+	bottom: 30%;
+	width: 20%;
+}
+p.subhead {
+	bottom: 24%;
+	width: 25%;
+}
+
+p.subhead-left,
+p.head-left {
+	left: 100px;
+}
+p.subhead-right,
+p.head-right {
+	right: 100px;
+}
+
 .landing-text-container {
 	margin-top: 150px;
 	margin-left: 100px;
@@ -59,7 +100,27 @@ html, body {
 	color: rgba(255,255,255,1);
 	background-color: #184274;
 }
-
+body{
+  position: relative;
+}
+.countdown-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  margin-top: -200px;
+  margin-left: -150px;
+  z-index: 10;
+  background-color: rgba(0,59,112,0.9); /*dim the background*/
+}
+.countdown-box p{
+	text-align: center;
+}
+#countdown {
+	
+	vertical-align: center;
+}
 /*
 ======================
 	card style

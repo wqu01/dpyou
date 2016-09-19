@@ -8,6 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="css/mdl.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 	<script src="js/material.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,600" rel="stylesheet">
 </head>
@@ -24,8 +27,9 @@
     <a href="" class="mdl-layout__tab"><img class="logo-image" src="img/logo.png"></a>
       <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Overview</a>
       <a href="#scroll-tab-2" class="mdl-layout__tab">Sched</a>
-      <a href="#scroll-tab-3" class="mdl-layout__tab">FAQ</a>
-      <a href="#scroll-tab-4" class="mdl-layout__tab">Contact</a>
+      <a href="#scroll-tab-3" class="mdl-layout__tab">For Participants</a>
+      <a href="#scroll-tab-4" class="mdl-layout__tab">For School Leaders</a>
+      <a href="#scroll-tab-5" class="mdl-layout__tab">For Presenters</a>
     </div>
   </header>
   
@@ -33,16 +37,38 @@
     <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
       <div class="page-content"><!-- Your content goes here -->
       <div class="landing">
-        <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--4-col landing-text-container mdl-typography--display-2">
-          DP YOU<br />
-          <p></p>
-          OCT 28 - 29, 2016<br />
-          <p></p>
-          Marriott Downtown<br />
-          Philadelphia, PA<br />
+        <div class="mdl-grid no-space">
+            <!-- <div class="mdl-cell mdl-cell--4-col landing-text-container mdl-typography--display-2">
+              DP YOU<br />
+              <p></p>
+              OCT 28 - 29, 2016<br />
+              <p></p>
+              Marriott Downtown<br />
+              Philadelphia, PA<br />
+            </div> --> 
+            <div class="countdown-box mdl-shadow--3dp">
+              <p> Days </p>
+              <p id="countdown"></p>
+              
+            </div>
+            <!-- min screen size 900 for below -->
+            <div class="background-left mdl-cell mdl-cell--6-col mdl-typography--display-2">
+              <p class="head head-left">October 28 - Day 1</p>
+              <p class="subhead subhead-left">Description of Day 1</p>
+            </div>
+            <div class="background-right mdl-cell mdl-cell--6-col mdl-typography--display-2">
+              <p class="head head-right">October 29 - Day 2</p>
+              <p class="subhead subhead-right">Description of Day 2</p>
+            </div>
+
+            <!-- add max screen size 900 here -->
         </div>
-        </div>
+
+
+
+
+
+
       </div>
 
 
@@ -169,7 +195,7 @@
     <section class="mdl-layout__tab-panel" id="scroll-tab-3">
       <div class="page-content mdl-grid content-max-width"><!-- Your content goes here -->
         <div class="mdl-cell--12-col" style="margin-top: 48px;">
-          <h2 class="mdl-card__title-text">FAQ</h2>
+          <h2 class="mdl-card__title-text">For Participants</h2>
           <p></p>
           <div>Coming Soon...</div>
         </div>
@@ -178,7 +204,16 @@
     <section class="mdl-layout__tab-panel" id="scroll-tab-4">
       <div class="page-content mdl-grid content-max-width"><!-- Your content goes here -->
         <div class="mdl-cell--12-col" style="margin-top: 48px;">
-          <h2 class="mdl-card__title-text">CONTACT</h2>
+          <h2 class="mdl-card__title-text">For School Leaders</h2>
+          <p></p>
+          <div>Coming Soon...</div>
+        </div>
+      </div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-5">
+      <div class="page-content mdl-grid content-max-width"><!-- Your content goes here -->
+        <div class="mdl-cell--12-col" style="margin-top: 48px;">
+          <h2 class="mdl-card__title-text">For Presenters</h2>
           <p></p>
           <div>Coming Soon...</div>
         </div>
