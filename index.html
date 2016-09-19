@@ -46,18 +46,18 @@
                 Marriott Downtown<br />
                 Philadelphia, PA<br />
               </div> --> 
-              <div class="countdown-box mdl-shadow--3dp">
-                <p id="days"> Days </p>
+              <div class="countdown-box mdl-shadow--24dp">
+                <p id="days"> DAYS </p>
                 <p id="countdown"></p>
                 
               </div>
               <!-- min screen size 900 for below -->
               <div class="background-left mdl-cell mdl-cell--6-col mdl-typography--display-2">
-                <p class="landing-head head head-left">October 28 - Day 1</p>
+                <p class="landing-head head head-left">October 28 &mdash; Day 1</p>
                 <p class="landing-subhead subhead subhead-left">Description of Day 1</p>
               </div>
               <div class="background-right mdl-cell mdl-cell--6-col mdl-typography--display-2">
-                <p class="landing-head head head-right">October 29 - Day 2</p>
+                <p class="landing-head head head-right">October 29 &mdash; Day 2</p>
                 <p class="landing-subhead subhead subhead-right">Description of Day 2</p>
               </div>
 
@@ -65,125 +65,116 @@
           </div>
         </div>
 
-        <!-- max width 1000px -->
-        <div class="information-container__head mdl-grid">
-          <div class="lines mdl-cell mdl-cell--12-col"><span class="information-head__text head">DP YOU 2016 -  Mariott Dowtown, Philadelphia, PA</span></div>
+        <!-- min width 1024px -->
+        <div class="information-container__head mdl-grid hide-mobile">
+          <div class="lines mdl-cell mdl-cell--12-col"><span class="information-head__text head">DP YOU 2016 &mdash;  Mariott Dowtown, Philadelphia, PA</span></div>
         </div>
 
+        <!-- mobile version -->
         <div class="mdl-grid">
-          <div class="information-head__text head mdl-cell mdl-cell--12-col header-mobile">DP YOU 2016 -  Mariott Dowtown, Philadelphia, PA</div>
+          <div class="information-head__text information-mobile show-mobile head mdl-cell mdl-cell--12-col">
+            DP YOU 2016 -  Mariott Dowtown, Philadelphia, PA
+            <hr>
+          </div>
         </div>
-        <!-- mobile version with underline -->
-
+        
         <div class="information-container__body mdl-grid content-max-width"><!-- start of first section -->
+          <div class="mdl-cell mdl-cell--6-col"><!-- information section -->
+            <img class="hotel-img" src="./img/hotel.jpg">    
+          </div><!-- end information card cell -->
           
-
-          <div class="mdl-cell mdl-cell--4-col mdl-card"><!-- information section -->
-              <div class="information-card__title mdl-card__title mdl-card--expand">
-                <h2 class="mdl-card__title-text">At a Glance</h2>
-              </div>
-
-              <div class="mdl-card__supporting-text">
-                <div class="mdl-typography--subhead custom-subhead">Location</div>
-                <div class="mdl-typography--headline custom-headline">Marriott Downtown, Philadelphia, PA</div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12233.99955103115!2d-75.160527!3d39.952575!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7b450177b196f33e!2sPhiladelphia+Marriott+Downtown!5e0!3m2!1sen!2sus!4v1472565599203" width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                <p></p>
-                <div class="mdl-typography--subhead custom-subhead">Dates</div>
-                <div class="mdl-typography--headline custom-headline">October 28 - 29, 2016</div>
-                <p></p>
-              </div>
-            </div><!-- end information card cell -->
-          
-          <div class="mdl-cell mdl-cell--8-col detail-card-container"><!-- detail cell -->
-              <div class="mdl-card__title">
-                <div class="mdl-card__title-text">What is DP-You?</div>
-              </div>
-              <div class="mdl-card__supporting-text"><span class="mdl-typography--subhead mdl-typography--font-light">
-                Details Coming Soon...
-              </span></div>
+          <div class="mdl-cell mdl-cell--6-col"><!-- detail cell -->
+            <p class="subhead description"> DP You is ...</p>
           </div> <!-- end detail cell -->
         </div><!-- end information container -->
 
-        <div class="travel-container"><!-- start travel container -->
-          <p class="mdl-typography--display-1 section-display">
-            How do I get there?</p>
-          <div class="content-max-width mdl-grid travel-section">
-            
 
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="mdl-card__title-text"><i class="material-icons">flight_takeoff</i>&emsp;Baton Rouge 
-              
-              </div>
-              
-              <div class="mdl-typography--subhead mdl-typography--font-light">&emsp;&emsp;&emsp;Exact Time TBA</div>
-            </div>
+        <!-- min width 1024px -->
+        <div class="timeline-container__head mdl-grid hide-mobile">
+          <div class="lines mdl-cell mdl-cell--12-col"><span class="information-head__text head">Day 1 Schedule</span></div>
+        </div>
 
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="mdl-card__title-text location-right">
-              <i class="material-icons">directions_bus</i> &emsp;DC, NY
-              </div>
-
-              <div class="mdl-typography--subhead mdl-typography--font-light">&emsp;&emsp;&emsp;Exact Time TBA</div>
-            </div>
+        <!-- mobile version -->
+        <div class="mdl-grid">
+          <div class="timeline-head__text timeline-mobile show-mobile head mdl-cell mdl-cell--12-col">
+            Day 1 Schedule
+            <hr>
           </div>
-        </div><!-- end travel container -->
+        </div>
 
-        <div class="event-container"><!-- start event container -->
-          <p class="mdl-typography--display-1 section-display">Things to Look Forward to</p>
+        <div class="timeline-container mdl-grid content-max-width"><!-- start timeline container -->
+          <div class="timeline-step mdl-cell mdl-cell--12-col" data-step="1">
+              <h4 class="head timeline-head">
+                Departures Begin
+              </h4>
+              <span class="timeline-step-number">7:00 AM</span>
+              <div class="timeline-subhead subhead">
+                <p>
+                  See individual campus directions for your departure time and location
+                </p>
+                <p>Breakfast information?
+                </p>
+              </div>
+          </div>
 
-          <!-- start activites -->
-          <div class="content-max-width mdl-grid activities-section">
-            <div class="mdl-cell mdl-cell--5-col">
-            	<img class="event-image" src="img/activity.jpg">
-            </div>
+          <div class="timeline-step mdl-cell mdl-cell--12-col" data-step="2">
+              <h4 class="head timeline-head">
+                Arrivals Begin
+              </h4>
+              <span class="timeline-step-number">10:00 AM</span>
+              <div class="timeline-subhead subhead">
+                <p>Arrival Instructions
+                </p>
+              </div>
+          </div>
 
-            <div class="mdl-cell mdl-cell--7-col">
-            	<div class="mdl-card__title-text event-title">Activities</div>
-              <ul class="mdl-typography--subhead mdl-typography--font-light">
-                <li>Team Building Exercises
-                </li>
-                <li>
-                  Professional Development Sessions
-                </li>
-              </ul>
-            </div>
-          </div><!-- end activits -->
-          
-          <!-- start food section -->
-          <div class="content-max-width mdl-grid food-section">
-            <div class="mdl-cell mdl-cell--5-col">
-              <img class="event-image" src="img/food.jpg">
-            </div>
-            <div class="mdl-cell mdl-cell--7-col">
-              <div class="mdl-card__title-text event-title">Food</div>
-              <ul class="mdl-typography--subhead mdl-typography--font-light">
-                <li>Reading Terminal Market: Famous indoor farmer's market offering diverse fare, housewares & area specialties since 1892.
-                </li>
-              </ul>
-            </div>
-          </div><!-- end food section -->
-          <!-- start swag section -->
-          <div class="content-max-width mdl-grid swag-section">
-            <div class="mdl-cell mdl-cell--5-col">
-              <img class="event-image" src="img/placeholder.jpg">
-            </div>
-            <div class="mdl-cell mdl-cell--7-col">
-              <div class="mdl-card__title-text event-title">Swag</div>
-              <ul class="mdl-typography--subhead mdl-typography--font-light">
-                <li>DP-You 2016 long sleeved t-shirt for everyone to wear on Friday.
-                </li>
-                <li>
-                  Luggage tag for bag storage on Friday morning.
-                </li>
-              </ul>
-            </div>
-          </div><!-- end swag section -->
+          <div class="timeline-step mdl-cell mdl-cell--12-col" data-step="3">
+              <h4 class="head timeline-head">
+                Lunch
+              </h4>
+              <span class="timeline-step-number">12:00 PM</span>
+              <div class="timeline-subhead subhead">
+                <p>Instructions for Lunch
+                </p>
+              </div>
+          </div>
+
+          <div class="timeline-step mdl-cell mdl-cell--12-col" data-step="4">
+              <h4 class="head timeline-head">
+                Welcome
+              </h4>
+              <span class="timeline-step-number">1:30 PM</span>
+              <div class="timeline-subhead subhead">
+                <p>notes
+                </p>
+              </div>
+          </div>
+
+          <div class="timeline-step mdl-cell mdl-cell--12-col" data-step="5">
+              <h4 class="head timeline-head">
+                Keynote Speaker
+              </h4>
+              <span class="timeline-step-number">2:00 PM</span>
+              <div class="timeline-subhead subhead">
+                <p>notes
+                </p>
+              </div>
+          </div>
+
+          <div class="timeline-step mdl-cell mdl-cell--12-col" data-step="6">
+              <h4 class="head timeline-head">
+                Dinner
+              </h4>
+              <span class="timeline-step-number">6:00 PM</span>
+              <div class="timeline-subhead subhead">
+                <p>notes
+                </p>
+              </div>
+          </div>
 
 
-        </div><!-- end event container -->
 
-
-
+        </div><!-- end timeline container -->
       </div><!-- end tab content -->
     </section>
 
