@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
+    
     // set the date we're counting down to
     var target_date = new Date("Oct 28, 2016").getTime();
      
