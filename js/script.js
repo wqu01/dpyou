@@ -1,5 +1,42 @@
+/*
+$(function(){
+    window.sr = ScrollReveal();
+    sr.reveal('.lines');
+});
+*/
+
 $( document ).ready(function() {
+
+    $(function (){
+    $( "#countdown-container" ).hide();
+    $(".landing-text").hide();
+    $( "#left-pic" ).animate({
+        width: "50%",
+        marginLeft: 0
+        }, {
+            duration: 1500, 
+            queue: false 
+            });
+    $( "#right-pic" ).animate({
+         width: "50%",
+          }, {
+            duration: 1500, 
+            queue: false, 
+            complete: function(){
+
+                $("#countdown-container").show().addClass('animated bounceInDown');
+                $(".landing-text").show().addClass('animated slideInUp');
+                
+/*
+                $( "#countdown-container" ).fadeIn( "slow", function() {
+                // Animation complete
+                $(".landing-text").fadeIn("slow");
+                });*/
+            }});
+    });
     
+  
+
     // set the date we're counting down to
     var target_date = new Date("Oct 28, 2016").getTime();
      
@@ -28,12 +65,9 @@ $( document ).ready(function() {
      
 
     // format countdown string + set tag value
-     countdown.innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";  
-    //countdown.innerHTML = days; 
+    // countdown.innerHTML = days + "d " + hours + "h "
+    //+ minutes + "m " + seconds + "s ";  
+    countdown.innerHTML = days; 
     }, 1000);
-
-
-
 });
 

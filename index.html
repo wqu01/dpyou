@@ -7,16 +7,28 @@
   <link rel="icon" href="img/url_icon.ico">
 	<link rel="stylesheet" type="text/css" href="css/mdl.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 	<script src="js/material.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
   <script src="js/script.js"></script>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,600" rel="stylesheet">
+
+
+
+
+
+
+
+
+
 </head>
 <!-- Simple header with scrollable tabs. -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
+  <header id="header-menu" class="mdl-layout__header">
     <!-- 
     <div class="mdl-layout__header-row">
       <img class="logo-image" src="img/logo.png">
@@ -46,28 +58,31 @@
                 Marriott Downtown<br />
                 Philadelphia, PA<br />
               </div> --> 
-              <div class="countdown-box mdl-shadow--24dp">
+
+              <div id="countdown-container" class="countdown-box mdl-shadow--24dp">
                 <p id="days"> DAYS </p>
                 <p id="countdown"></p>
                 
               </div>
               <!-- min screen size 900 for below -->
-              <div class="background-left mdl-cell mdl-cell--6-col mdl-typography--display-2">
-                <p class="landing-head head head-left">October 28 &mdash; Day 1</p>
-                <p class="landing-subhead subhead subhead-left">Description of Day 1</p>
+              <div id="left-pic" class="background-left mdl-cell mdl-cell--6-col mdl-typography--display-2">
+                
               </div>
-              <div class="background-right mdl-cell mdl-cell--6-col mdl-typography--display-2">
-                <p class="landing-head head head-right">October 29 &mdash; Day 2</p>
-                <p class="landing-subhead subhead subhead-right">Description of Day 2</p>
-              </div>
+                <p class="landing-text landing-head head head-left">October 28 &mdash; Day 1</p>
+                <p class="landing-text landing-subhead subhead subhead-left">Description of Day 1</p>
 
+              <div id="right-pic" class="background-right mdl-cell mdl-cell--6-col mdl-typography--display-2">
+                
+              </div>
+              <p class="landing-text landing-head head head-right">October 29 &mdash; Day 2</p>
+              <p class="landing-text landing-subhead subhead subhead-right">Description of Day 2</p>
               <!-- add max screen size 900 here -->
           </div>
         </div>
 
         <!-- min width 1024px -->
         <div class="information-container__head mdl-grid hide-mobile">
-          <div class="lines mdl-cell mdl-cell--12-col"><span class="information-head__text head">DP YOU 2016 &mdash;  Mariott Dowtown, Philadelphia, PA</span></div>
+          <div id="lll" class="lines mdl-cell mdl-cell--12-col"><span class="information-head__text head">DP YOU 2016 &mdash;  Mariott Dowtown, Philadelphia, PA</span></div>
         </div>
 
         <!-- mobile version -->
@@ -102,7 +117,7 @@
           </div>
         </div>
 
-        <div class="timeline-container mdl-grid content-max-width"><!-- start timeline container -->
+        <div class="timeline-container mdl-grid content-max-width no-space"><!-- start timeline container -->
           <div class="timeline-step mdl-cell mdl-cell--12-col" data-step="1">
               <h4 class="head timeline-head">
                 Departures Begin
@@ -152,7 +167,7 @@
 
           <div class="timeline-step mdl-cell mdl-cell--12-col" data-step="5">
               <h4 class="head timeline-head">
-                Keynote Speaker
+                Breakout Time
               </h4>
               <span class="timeline-step-number">2:00 PM</span>
               <div class="timeline-subhead subhead">
@@ -163,6 +178,17 @@
 
           <div class="timeline-step mdl-cell mdl-cell--12-col" data-step="6">
               <h4 class="head timeline-head">
+                Check In
+              </h4>
+              <span class="timeline-step-number">4:00 PM</span>
+              <div class="timeline-subhead subhead">
+                <p>notes
+                </p>
+              </div>
+          </div>
+
+          <div class="timeline-step mdl-cell mdl-cell--12-col" data-step="7">
+              <h4 class="head timeline-head">
                 Dinner
               </h4>
               <span class="timeline-step-number">6:00 PM</span>
@@ -172,9 +198,41 @@
               </div>
           </div>
 
+          <div class="timeline-step mdl-cell mdl-cell--12-col" data-step="8">
+              <h4 class="head timeline-head">
+                Party
+              </h4>
+              <span class="timeline-step-number">7:30 PM</span>
+              <div class="timeline-subhead subhead">
+                <p>notes
+                </p>
+              </div>
+          </div>
+          </div><!--top timeline -->
 
 
-        </div><!-- end timeline container -->
+
+          <div class="timeline-container-last">
+            <div class="mdl-grid no-space content-max-width ">
+              <div class="timeline-step mdl-cell mdl-cell--12-col timeline-last" data-step="9">
+                  <h4 class="head timeline-head">
+                    Day 2
+                  </h4>
+                  <span class="timeline-step-number">7:30 AM</span>
+                  <div class="timeline-subhead subhead">
+                    <p>notes
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+          </div><!-- end timeline container -->
+
+
+
+
+
+
       </div><!-- end tab content -->
     </section>
 
