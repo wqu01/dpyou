@@ -1,3 +1,5 @@
+
+
 /*
 $(function(){
     window.sr = ScrollReveal();
@@ -6,8 +8,12 @@ $(function(){
 */
 
 $( document ).ready(function() {
+    
+   
 
     $(function (){
+
+    //if($(window).width() > 1023){
     $( "#countdown-container" ).hide();
     $(".landing-text").hide();
     $( "#left-pic" ).animate({
@@ -33,6 +39,9 @@ $( document ).ready(function() {
                 $(".landing-text").fadeIn("slow");
                 });*/
             }});
+    //}
+
+
     });
     
   
@@ -45,6 +54,7 @@ $( document ).ready(function() {
      
     // get tag element
     var countdown = document.getElementById("countdown");
+    //var countdown_mobile = document.getElementById("countdown-mobile");
      
     // update the tag with id "countdown" every 1 second
     setInterval(function () {
@@ -68,6 +78,7 @@ $( document ).ready(function() {
     // countdown.innerHTML = days + "d " + hours + "h "
     //+ minutes + "m " + seconds + "s ";  
     countdown.innerHTML = days; 
+    
     }, 1000);
 });
 

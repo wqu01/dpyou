@@ -32,21 +32,21 @@ html, body {
 =====================
 */
 .mdl-layout__tab-bar-container{
-	height: 60px;
+	height: 64px;
 }
-.mdl-layout__tab-bar{
+.mdl-layout__tab-bar,
+.mdl-layout__tab-bar-button {
 	height: 64px;
 }
 .logo-image {
 	height: 100%;
 }
 .mdl-layout__tab{
-	height: 60px;
-	line-height: 60px;
+	height: 64px;
+	line-height: 64px;
 }
-.mdl-layout__header {
-	height: 0px;
-}
+
+
 /*
 ======================
 	landing
@@ -183,6 +183,7 @@ hr {
 .hotel-img {
 	max-width: 360px;
 	border: 7px solid rgb(0,59,112);
+	margin: auto;
 }
 .description {
 
@@ -310,9 +311,49 @@ hr {
 	.show-mobile {
 		display: block;
 	}
-}
+	.background-left, 
+	.background-right{
+	 width: 50%;
+	 margin: 0;
+	}
 @media (max-width:425px){
 	.landing-text-container{
 		margin-left: 10px;
 	}
 }
+@media (max-width:750px){
+	.countdown-box {
+		top: 300px;
+	}
+	p.head-left{
+		bottom: 25%;
+		left: 0px;
+	}
+	p.subhead-left{
+		bottom: 18%;
+		left: 0px;
+	}
+	p.head-right{
+		bottom: 48px;
+		right: 0px;
+	}
+	p.subhead-right{
+		bottom: 1px;
+		right: 0px;
+	}
+
+	p.head-left,
+	p.subhead-left,
+	p.head-right,
+	p.subhead-right{
+		text-align: center;
+		width: 80%;
+		z-index: 2;
+
+	}
+
+
+}
+
+
+
