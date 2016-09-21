@@ -188,6 +188,34 @@ hr {
 .description {
 
 }
+
+.card-image.mdl-card {
+  width: 360px;
+  height: 360px;
+  background: url('../img/hotel.jpg') center / cover;
+}
+.card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0,59,112,0.8);
+
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.card-image > .mdl-card__actions:hover {
+    background-color: rgba(0,59,112,0.4);
+}
+
+.mdl-card__actions > a {
+	color: #F8F8FF;
+	text-decoration: none;
+}
+.card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
 /*
 ======================
 	timeline style
@@ -230,7 +258,14 @@ hr {
 .timeline-step[data-step="7"]:before { background: linear-gradient(-180deg, #255780 0%, #194b75 100%); }
 .timeline-step[data-step="8"]:before { background: linear-gradient(-180deg, #194b75 0%, #003b70 100%); }
 
-.timeline-step[data-step="9"]:before { background: #FFF; height: 55px; }
+.timeline-step[data-step="9"]:before { background: linear-gradient(-180deg, #ffffff 50%, #fff3d6 100%); }
+.timeline-step[data-step="10"]:before { background: linear-gradient(-180deg, #fff3d6 0%, #ffe7af 100%); }
+.timeline-step[data-step="11"]:before { background: linear-gradient(-180deg, #ffe7af 0%, #ffdc87 100%); }
+.timeline-step[data-step="12"]:before { background: linear-gradient(-180deg, #ffdc87 0%, #ffd15d 100%); }
+
+
+
+.timeline-step[data-step="13"]:before { background: #ffc627; height: 55px; }
 /*
 .timeline-step[data-step="1"] .timeline-step-number { background: #FFCA28; }
 .timeline-step[data-step="2"] .timeline-step-number { background: #FEBA26; }
@@ -251,6 +286,17 @@ hr {
 .timeline-step[data-step="8"] .timeline-step-number { background: #194b75; }
 
 .timeline-step[data-step="9"] .timeline-step-number { background: #FFF; color: #003b70; }
+.timeline-step[data-step="10"] .timeline-step-number { background: #fff3d6; color: #003b70; }
+.timeline-step[data-step="11"] .timeline-step-number { background: #ffdc87; color: #003b70; }
+.timeline-step[data-step="12"] .timeline-step-number { background: #ffd15d; color: #003b70; }
+.timeline-step[data-step="13"] .timeline-step-number { background: #ffc627; color: #003b70; }
+
+
+
+
+
+
+
 
 .timeline-step-number {
     border-radius: 50px;
@@ -281,7 +327,26 @@ hr {
 }
 .timeline-last div,
 .timeline-last h4 {
-	color: #bfbfbf;
+	color: #F8F8FF;
+}
+
+.footer {
+	background-color: #F8F8FF;
+}
+/* footer */
+footer .logos img{
+	height: 64px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+footer .icons img{
+	
+	height: 32px;
+	margin: 20px 10px;
+}
+.footer-max-width {
+	height: 84px;
+	max-width: 1240px;
 }
 /*
 ======================
