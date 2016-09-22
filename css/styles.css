@@ -6,8 +6,9 @@
 html, body {
 	font-family: "Open Sans", sans-serif;
 }
-.tab-font {
+.tab-font >a {
 	font-family: 'Raleway', sans-serif;
+	font-weight: 600 !important;
 }
 .mdl-typography--subhead, .subhead {
 	font-family: "Open Sans", sans-serif;
@@ -21,6 +22,7 @@ html, body {
 }
 .head {
 	font-size: 24px;
+	font-weight: 600;
 }
 .subhead,
 .subhead p {
@@ -59,12 +61,19 @@ html, body {
 	padding: 0px;
 }
 .background-left {
-	background: url("../img/background-left.jpg");
+	background: 
+	
+    url("../img/background-left.jpg");
 	margin: 0 0 0 51%;
 
 }
+/*
+rgba(255, 198, 39, .3), 
+rgba(255, 198, 39, .3)
+*/
 .background-right {
-	background: url("../img/background-right.jpg");
+	background: 
+    url("../img/background-right.jpg");
 	left: 50%;
 	margin: 0px;
 }
@@ -76,21 +85,44 @@ html, body {
 	background-position: center;
 	height: 742px;
 	width: 0;
+	
 } 
+
+.background-left:hover {
+	background: 
+	linear-gradient(
+      rgba(255, 198, 39, .2), 
+rgba(255, 198, 39, .2)
+    ),
+    url("../img/background-left.jpg");
+
+
+} 
+.background-right:hover {
+	background: 
+	linear-gradient(
+      rgba(255, 198, 39, .2), 
+rgba(255, 198, 39, .2)
+    ),
+    url("../img/background-right.jpg");
+}
+
+
 p.landing-head,
 p.landing-subhead {
 	position: absolute;
-	color: rgba(255,255,255,1);
-	background-color: #184274;
+	color: rgb(255, 198, 39);
+	background-color: rgba(0,59,112,0.9);
 	padding: 10px;
 }
 p.landing-head {
-	bottom: 12%;
-	width: 20%;
+	bottom: 10%;
+	/* width: 20%; */
 }
+
 p.landing-subhead {
-	bottom: 5%;
-	width: 25%;
+	bottom: 2%;
+	/* width: 25%; */
 }
 
 p.subhead-left,
@@ -131,6 +163,10 @@ p#days {
 	font-family: 'Raleway', sans-serif;
 	font-size: 24px;
 	color: rgb(255, 198, 39);
+}
+.landing-text.head {
+	font-size: 32px;
+	line-height: 32px;
 }
 /*
 ======================
