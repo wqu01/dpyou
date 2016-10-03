@@ -22,11 +22,23 @@ html, body {
 }
 .head {
 	font-size: 24px;
-	font-weight: 600;
+	/* font-weight: 600; */
 }
 .subhead,
 .subhead p {
 	font-size: 18px;
+}
+.body-text {
+	line-height: 1.5em;
+	max-width: 800px;
+	font-size: 16px;
+}
+a {
+	color: blue;
+}
+.black {
+	color: black;
+	font-weight: 600;
 }
 /*
 =====================
@@ -87,56 +99,69 @@ rgba(255, 198, 39, .3)
 	width: 0;
 	
 } 
-
+/*
 .background-left:hover {
 	background: 
 	linear-gradient(
-      rgba(255, 198, 39, .2), 
-rgba(255, 198, 39, .2)
+     rgba(255, 198, 39, .2), 
+	rgba(255, 198, 39, .2)
     ),
     url("../img/background-left.jpg");
-
 
 } 
 .background-right:hover {
 	background: 
 	linear-gradient(
-      rgba(255, 198, 39, .2), 
-rgba(255, 198, 39, .2)
+    rgba(255, 198, 39, .2), 
+	rgba(255, 198, 39, .2)
     ),
     url("../img/background-right.jpg");
 }
-
-
+*/
 p.landing-head,
 p.landing-subhead {
 	position: absolute;
-	color: rgb(255, 198, 39);
+	/* color: rgb(255, 198, 39); */
+	color: white;
 	background-color: rgba(0,59,112,0.9);
 	padding: 10px;
 }
 p.landing-head {
-	bottom: 10%;
+	/* bottom: 15%;*/
 	/* width: 20%; */
+	font-weight: 600;
+	margin-bottom: 20px;
 }
 
 p.landing-subhead {
-	bottom: 2%;
+	/* bottom: 2%; */
 	/* width: 25%; */
+	top: 80%;
 }
 
 p.subhead-left,
 p.head-left {
-	left: 100px;
+	left: 50px;
 }
 p.subhead-right,
 p.head-right {
-	right: 100px;
+	right: 50px;
 	text-align: right;
 }
+p.subhead-left, p.subhead-right {
+	width: 500px; 
+	max-width: 40% 
+}
+#mobile-landing-text{
+	display: none;
+}
+
+
+
+
 body{
   position: relative;
-  color: #404040;
+  color: #333;
 }
 .countdown-box{
   position: absolute;
@@ -167,6 +192,7 @@ p#days {
 .landing-text.head {
 	font-size: 32px;
 	line-height: 32px;
+	padding-bottom: 20px;
 }
 /*
 ======================
@@ -192,6 +218,7 @@ p#days {
 	padding: 0 10px;
 	background-color: #ffffff;
 	text-align: center;
+	font-weight: 600;
 }
 .lines{
 	width:100%; 
@@ -327,13 +354,6 @@ hr {
 .timeline-step[data-step="12"] .timeline-step-number { background: #ffd15d; color: #003b70; }
 .timeline-step[data-step="13"] .timeline-step-number { background: #ffc627; color: #003b70; }
 
-
-
-
-
-
-
-
 .timeline-step-number {
     border-radius: 50px;
     color: #FFF;
@@ -392,7 +412,27 @@ footer .icons img{
 .content-max-width {
 	max-width: 950px;
 }
-.
+/*.fade-in
+{
+    opacity:0;
+}*/
+
+
+/* forms */
+#food-header > .button-minus {
+	display: none;
+}
+#food-form{
+	display: none;
+	margin-top: 20px;
+}
+#music-form{
+	display: none;
+	margin-top: 20px;
+}
+#music-header > .button-minus {
+	display: none;
+}
 
 /*
 ======================
@@ -424,18 +464,42 @@ footer .icons img{
 }
 @media (max-width:750px){
 	.countdown-box {
-		top: 300px;
+		top: 250px;
 	}
+	
+	#mobile-landing-text{
+		display: block;
+		z-index: 3;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+		color: white;
+		background-color: rgba(0,59,112,0.9);
+		padding: 10px;
+		margin-top: 350px;
+	}
+	p.landing-head,
+	p.landing-subhead {
+		display: none !important;
+	}
+	/*
 	p.head-left{
-		bottom: 25%;
+		bottom: 45%;
 		left: 0px;
 	}
+	.landing-text.head {
+    font-size: 24px;
+    line-height: 24px;
+}
+	.subhead {
+		font-size: 16px;
+	}
 	p.subhead-left{
-		bottom: 18%;
+		bottom: 28%;
 		left: 0px;
 	}
 	p.head-right{
-		bottom: 48px;
+		bottom: 17%;
 		right: 0px;
 	}
 	p.subhead-right{
@@ -452,7 +516,7 @@ footer .icons img{
 		z-index: 2;
 
 	}
-
+	*/
 
 }
 
