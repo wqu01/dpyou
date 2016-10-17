@@ -1,5 +1,6 @@
 
 $( document ).ready(function() {
+    
     $(function (){
 
     //if($(window).width() > 1023){
@@ -21,12 +22,6 @@ $( document ).ready(function() {
 
                 $("#countdown-container").show().addClass('animated bounceInDown');
                 $(".landing-text").show().addClass('animated slideInUp');
-                
-/*
-                $( "#countdown-container" ).fadeIn( "slow", function() {
-                // Animation complete
-                $(".landing-text").fadeIn("slow");
-                });*/
             }});
     //}
     });
@@ -64,7 +59,7 @@ $( document ).ready(function() {
         //+ minutes + "m " + seconds + "s ";  
         countdown.innerHTML = days; 
     }, 1000);
-
+    
     $( "#food-header" ).click(function() {
       $( "#food-form" ).slideToggle();
       $( "#food-header > .button-expand" ).toggle();
@@ -82,6 +77,31 @@ $( document ).ready(function() {
        
 
     });
+    $( "#ar-header" ).click(function() {
+      $( "#ar-form" ).slideToggle();
+      
+      $( "#ar-header > .button-expand" ).toggle();
+      $( "#ar-header > .button-minus" ).toggle();
+       
 
+    });
+    $('.answer').hide();
+    var arr = [ true, true, true, true, true, true, true ];
+    $('.q').click(function () {
+        //$( ".answer" ).slideToggle();
+        var anum = $(this).attr('target');
+        console.log(anum);
+        if(arr[anum] === false){
+            $('#icon' + $(this).attr('target')).addClass('rotated-undo');
+            $('#icon' + $(this).attr('target')).removeClass('rotated');
+           
+        }
+        else{
+            $('#icon' + $(this).attr('target')).addClass('rotated');
+            $('#icon' + $(this).attr('target')).removeClass('rotated-undo');
+        }
+        $('#ans' + $(this).attr('target')).slideToggle();
+        arr[anum] = !arr[anum];        
+    });
 });
 

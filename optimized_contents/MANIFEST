@@ -1,0 +1,23 @@
+This zip file contains optimized resources for http://democracyprep.org/dp-you. The optimized resources are listed below in the format of: 
+filename: url
+
+Note: We only include up to 10 MB of optimized contents. If the
+optimized contents of your page are larger than 10 MB, we list them in
+this file too, with 'NOT INCLUDED' to indicate those URLs require
+further optimization.
+
+css/styles.css: http://democracyprep.org/dp-you/css/styles.css
+css/main-2016-09-27.css: https://cdn.schd.ws/common/css/main-2016-09-27.css
+js/script.js: http://democracyprep.org/dp-you/js/script.js
+js/main-2016-06-09.js: https://cdn.schd.ws/common/js/main-2016-06-09.js
+image/logo.png: http://democracyprep.org/dp-you/img/logo.png
+image/dpps_logo.png: http://democracyprep.org/dp-you/img/dpps_logo.png
+image/facebook.png: http://democracyprep.org/dp-you/img/logos/facebook.png
+image/twitter.png: http://democracyprep.org/dp-you/img/logos/twitter.png
+image/youtube.png: http://democracyprep.org/dp-you/img/logos/youtube.png
+image/flickr.png: http://democracyprep.org/dp-you/img/logos/flickr.png
+image/linkedin.png: http://democracyprep.org/dp-you/img/logos/linkedin.png
+image/instagram.png: http://democracyprep.org/dp-you/img/logos/instagram.png
+image/icon-arrow-down.png: https://cdn.schd.ws/common/img/icon-arrow-down.png
+image/share-email-retina.png: https://cdn.schd.ws/common/img/share-email-retina.png
+image/logo-facebook.png: https://cdn.schd.ws/common/img/logo-facebook.png
