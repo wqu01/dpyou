@@ -1,6 +1,6 @@
 
 $( document ).ready(function() {
-    
+    /*
     $(function (){
 
     //if($(window).width() > 1023){
@@ -25,7 +25,8 @@ $( document ).ready(function() {
             }});
     //}
     });
-    
+    */
+    /*
     // set the date we're counting down to
     var target_date = new Date("Oct 28, 2016").getTime();
      
@@ -54,12 +55,11 @@ $( document ).ready(function() {
         seconds = parseInt(seconds_left % 60);
          
 
-        // format countdown string + set tag value
-        // countdown.innerHTML = days + "d " + hours + "h "
-        //+ minutes + "m " + seconds + "s ";  
-        countdown.innerHTML = days; 
+        //format countdown string + set tag value
+        countdown.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";  
+        //countdown.innerHTML = days; 
     }, 1000);
-    
+    */
     $( "#food-header" ).click(function() {
       $( "#food-form" ).slideToggle();
       $( "#food-header > .button-expand" ).toggle();
@@ -90,7 +90,7 @@ $( document ).ready(function() {
     $('.q').click(function () {
         //$( ".answer" ).slideToggle();
         var anum = $(this).attr('target');
-        console.log(anum);
+       
         if(arr[anum] === false){
             $('#icon' + $(this).attr('target')).addClass('rotated-undo');
             $('#icon' + $(this).attr('target')).removeClass('rotated');
@@ -103,5 +103,41 @@ $( document ).ready(function() {
         $('#ans' + $(this).attr('target')).slideToggle();
         arr[anum] = !arr[anum];        
     });
+
+    $('.mobile-attire-grid .tabcontent').hide();
+    
+    $('.m-tablinks').click(function () {
+          
+        $('#attire' + $(this).attr('target')).slideToggle();
+           
+    });
+
+
 });
+
+function openDetail(evt, occasion) {
+        
+    // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+            tablinks[i].style.opacity = ".5";
+        }
+
+        // Show the current tab, and add an "active" class to the link that opened the tab
+        document.getElementsByClassName("attire-info-grid")[0].style.display = "block";
+        document.getElementById(occasion).style.display = "block";
+        evt.currentTarget.style.opacity = "1";
+        evt.currentTarget.className += " active";
+    }
 
